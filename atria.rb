@@ -5,21 +5,21 @@
 class Atria < Formula
   desc "Agent multiplexer for your terminal"
   homepage "https://github.com/sethdeckard/atria"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sethdeckard/atria/releases/download/v0.4.2/atria_0.4.2_darwin_amd64.tar.gz"
-      sha256 "6b74ed93046fe318d63e45f7882366cc32a25feaba2aed7fed8199e844409a9a"
+      url "https://github.com/sethdeckard/atria/releases/download/v0.4.3/atria_0.4.3_darwin_amd64.tar.gz"
+      sha256 "c340b271df922c583aaf41cec3b5342320072c45ab7e05d42f4760b275c8d752"
 
       define_method(:install) do
         bin.install "atria"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sethdeckard/atria/releases/download/v0.4.2/atria_0.4.2_darwin_arm64.tar.gz"
-      sha256 "d8dd04a00398f589958eb713236b10684f13c05f3d0733b457435ccf9a0ea99a"
+      url "https://github.com/sethdeckard/atria/releases/download/v0.4.3/atria_0.4.3_darwin_arm64.tar.gz"
+      sha256 "6ab42d0f701de85d7ed8fe4f4537415b0bd1bde48ed286c2e56caf133c63ff4d"
 
       define_method(:install) do
         bin.install "atria"
@@ -29,15 +29,15 @@ class Atria < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethdeckard/atria/releases/download/v0.4.2/atria_0.4.2_linux_amd64.tar.gz"
-      sha256 "73c87aaa8b4cde3520b0137a98679386b5cc2e6fa2f569752fe235690f4fadd4"
+      url "https://github.com/sethdeckard/atria/releases/download/v0.4.3/atria_0.4.3_linux_amd64.tar.gz"
+      sha256 "5b0c3d7ff970d6381600503199c17880d03a1fc3b54ccecefe903821835c1b8b"
       define_method(:install) do
         bin.install "atria"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethdeckard/atria/releases/download/v0.4.2/atria_0.4.2_linux_arm64.tar.gz"
-      sha256 "3edb19c4de15d0100390c7eda292daaaa121ea8f8dfaeeefd11ea0af9abcacde"
+      url "https://github.com/sethdeckard/atria/releases/download/v0.4.3/atria_0.4.3_linux_arm64.tar.gz"
+      sha256 "310715bb9e2160dabddb9914d272864c15f9007f54162609c15f426a90de70dd"
       define_method(:install) do
         bin.install "atria"
       end
