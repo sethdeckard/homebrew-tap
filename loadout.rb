@@ -5,21 +5,21 @@
 class Loadout < Formula
   desc "Skill manager for Claude and Codex"
   homepage "https://github.com/sethdeckard/loadout"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sethdeckard/loadout/releases/download/v0.4.0/loadout_0.4.0_darwin_amd64.tar.gz"
-      sha256 "495f6e6f87c69c61ebd922489867543049d6ec9510fb239b199765910f13388a"
+      url "https://github.com/sethdeckard/loadout/releases/download/v0.5.0/loadout_0.5.0_darwin_amd64.tar.gz"
+      sha256 "eda0f4248f3b9cefaae856550fe710a738911953dc7706867860b18508c19050"
 
       define_method(:install) do
         bin.install "loadout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sethdeckard/loadout/releases/download/v0.4.0/loadout_0.4.0_darwin_arm64.tar.gz"
-      sha256 "06370ee19de16e56ec9695493fce4aa2f702d02d9a6f149527fc4db0c7e8b4da"
+      url "https://github.com/sethdeckard/loadout/releases/download/v0.5.0/loadout_0.5.0_darwin_arm64.tar.gz"
+      sha256 "a18fb602abed51c1cf683c5c5708d16228fc411d0a77622ce4e3b80f73c2edbb"
 
       define_method(:install) do
         bin.install "loadout"
@@ -29,15 +29,15 @@ class Loadout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethdeckard/loadout/releases/download/v0.4.0/loadout_0.4.0_linux_amd64.tar.gz"
-      sha256 "6386254b885742f6b721b62618cd33b1a8053fbb8fc29a18e00feaa91ea11383"
+      url "https://github.com/sethdeckard/loadout/releases/download/v0.5.0/loadout_0.5.0_linux_amd64.tar.gz"
+      sha256 "5cc5ef132280eb0f7fa47952187ca64e13f61780354acfb39ed6ce8fbb7f6c88"
       define_method(:install) do
         bin.install "loadout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sethdeckard/loadout/releases/download/v0.4.0/loadout_0.4.0_linux_arm64.tar.gz"
-      sha256 "ab837c82d6859631c65e952ef616274c29693ccf4b1d854f4b4930c94a167275"
+      url "https://github.com/sethdeckard/loadout/releases/download/v0.5.0/loadout_0.5.0_linux_arm64.tar.gz"
+      sha256 "61fdd8a5bba697cbd0b33259df754d867e28f21ffb7a41c01c196e78b40ff8b2"
       define_method(:install) do
         bin.install "loadout"
       end
