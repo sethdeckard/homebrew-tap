@@ -1,14 +1,14 @@
-# Homebrew cask for deviceterm — source of truth, versioned with the app.
-#
-# `scripts/publish-release.sh` renders this into the tap
+# Homebrew cask template for deviceterm. `version` and `sha256` are
+# placeholders: `scripts/publish-release.sh` renders this into the tap
 # (sethdeckard/homebrew-tap → Casks/deviceterm.rb) at release time,
-# refreshing `version` + `sha256` from the notarized DMG. Don't hand-edit
-# the copy in the tap; edit this template and re-run the publish step.
+# filling `version` from DeviceTermVersion.swift and `sha256` from the
+# notarized DMG. Don't hand-edit the copy in the tap; edit this
+# template and re-run the publish step.
 #
 # Install:  brew install --cask sethdeckard/tap/deviceterm
 cask "deviceterm" do
-  version "0.2.0"
-  sha256 "01e2d4484edbc51e63b6d58e9d9b82e018514ad24df687c349c8861889e0c046"
+  version "0.3.0"
+  sha256 "3d44b7bd791fd9e1104f12f2cd120669f4397f09015e9fc7899aef1411882970"
 
   url "https://github.com/sethdeckard/deviceterm/releases/download/v#{version}/deviceterm-#{version}.dmg",
       verified: "github.com/sethdeckard/deviceterm/"
