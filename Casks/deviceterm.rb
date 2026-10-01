@@ -7,11 +7,10 @@
 #
 # Install:  brew install --cask sethdeckard/tap/deviceterm
 cask "deviceterm" do
-  version "0.11.0"
-  sha256 "0e01657207985a71252531e18509b5563ba476ec0f67aa8df3aef321f4dc8499"
+  version "0.12.0"
+  sha256 "5dbe132ae6c0ec8a88ce7549e902e91d8877371daddf3b4d0f7d7928b84b3540"
 
-  url "https://github.com/sethdeckard/deviceterm/releases/download/v#{version}/deviceterm-#{version}.dmg",
-      verified: "github.com/sethdeckard/deviceterm/"
+  url "https://github.com/sethdeckard/deviceterm/releases/download/v#{version}/deviceterm-#{version}.dmg"
   name "DeviceTerm"
   desc "macOS-native terminal that runs live iOS Simulators as panes"
   homepage "https://deviceterm.com"
