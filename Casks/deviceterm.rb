@@ -7,8 +7,8 @@
 #
 # Install:  brew install --cask sethdeckard/tap/deviceterm
 cask "deviceterm" do
-  version "0.15.0"
-  sha256 "54b1811b1b914a135dffd78c9b51208710980b6e72ee068d853ee4e3e187e79e"
+  version "0.16.0"
+  sha256 "ba7433f0850bd48c755c2033a807bb8a7e3f4efd545ed54c039e6d22ea84fa6a"
 
   url "https://github.com/sethdeckard/deviceterm/releases/download/v#{version}/deviceterm-#{version}.dmg"
   name "DeviceTerm"
